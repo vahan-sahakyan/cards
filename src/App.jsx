@@ -4,7 +4,7 @@ import TheLayout from './components/TheLayout/TheLayout';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <TheLayout />
     </div>
   );
