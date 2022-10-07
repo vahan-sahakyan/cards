@@ -10,6 +10,7 @@ const Card = ({ value, id }) => {
   };
   return (
     <div className='card'>
+      <pre>{id}</pre>
       <span onClick={handleRemove}>&#10005;</span>
       <h3>{value}</h3>
     </div>

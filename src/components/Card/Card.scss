@@ -15,4 +15,13 @@
     top: 0.2rem;
     right: 0.7rem;
   }
+  pre {
+    position: absolute;
+    color: #2225;
+    bottom: 0.2rem;
+    right: 0.7rem;
+    &:before {
+      content: 'id: ';
+    }
+  }
 }

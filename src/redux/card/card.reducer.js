@@ -7,7 +7,7 @@ import {
 
 const initialState = {
   cards: [],
-  length: 0,
+  uniqueId: 0,
 };
 const cardReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -15,11 +15,11 @@ const cardReducer = (state = initialState, action) => {
     case ADD_CARD:
       return {
         ...state,
-        length: state.length + 1,
+        uniqueId: state.uniqueId + 1,
         cards: [
           ...state.cards,
           {
-            id: state.cards.length,
+            id: state.uniqueId,
             value: action.payload,
           },
         ],
