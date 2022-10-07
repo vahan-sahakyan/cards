@@ -1,0 +1,12 @@
+.the-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  h5 {
+    color: #6db4ffdd;
+  }
+  pre {
+    color: #ddd;
+  }
+}

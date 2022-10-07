@@ -1,0 +1,26 @@
+.the-layout {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 75vw 25vw;
+  grid-template-rows: 10vh 80vh 10vh;
+  min-height: 100vh;
+
+  .the-header {
+    background-color: #e2e9f3;
+    border-bottom: 1px solid #aaa;
+  }
+  .main-container {
+    background-color: #fff;
+  }
+  .the-sidebar {
+    background-color: #212124;
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+  }
+  .the-footer {
+    border-top: 1px solid #aaa;
+    background-color: #e2e9f3;
+    text-transform: uppercase;
+    color: #7773;
+  }
+}

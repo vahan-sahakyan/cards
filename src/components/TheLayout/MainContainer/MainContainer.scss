@@ -1,0 +1,32 @@
+.main-container {
+  &::-webkit-scrollbar {
+    // OLD
+    width: 6px;
+    // NEW
+    width: 8px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #0001;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #13334aee;
+    background: #0008;
+
+    margin: 10px;
+    padding: 10px;
+  }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #13334aff;
+    background: #0008;
+    background: #13334aee;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
