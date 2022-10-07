@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { selectAllCards } from '../../../redux/card/card.selector';
 import Card from '../../Card/Card';
@@ -7,15 +7,11 @@ import './MainContainer.scss';
 const MainContainer = () => {
   const cards = useSelector(selectAllCards);
   return (
-    <div
-      //
-      // style={{ overflowY: 'scroll' }}
-      className="main-container"
-    >
+    <div className='main-container'>
       {!cards.length ? (
-        <h1>No Cards</h1>
+        <h1 className='no-cards'>No Cards</h1>
       ) : (
-        <div className="cards">
+        <div className='cards'>
           {cards.map(card => (
             <Card {...card} />
           ))}

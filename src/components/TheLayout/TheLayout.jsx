@@ -7,7 +7,7 @@ import TheSidebar from './TheSidebar/TheSidebar';
 
 function TheLayout() {
   return (
-    <div className="the-layout">
+    <div className='the-layout'>
       <TheHeader />
       <MainContainer />
       <TheSidebar />
