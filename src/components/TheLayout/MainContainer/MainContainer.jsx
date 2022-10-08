@@ -13,7 +13,7 @@ const MainContainer = () => {
       ) : (
         <div className='cards'>
           {cards.map(card => (
-            <Card {...card} />
+            <Card key={card.id} {...card} />
           ))}
         </div>
       )}
